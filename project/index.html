@@ -1,98 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page of the Taipei Country Website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home page of the Taipei Country Website"
+    />
     <!-- Reset Css -->
-    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
     <!-- Javascript file -->
     <script src="scripts/script.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <title>Taipei</title>
 
-    <link rel="icon" href="medias/country-website-favicon.svg" type="image/svg+xml" />
-</head>
-<body id="top">
+    <link
+      rel="icon"
+      href="medias/country-website-favicon.svg"
+      type="image/svg+xml"
+    />
+  </head>
+  <body id="top">
     <div class="site-wrapper">
+      <header class="site-header">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="medias/country-website-favicon.svg"
+            alt="Plum Blossom"
+            width="50"
+            height="50"
+          />
+        </a>
 
-        <header class="site-header">
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
 
-            <a href="index.html">
-                <img class="logo" src="medias/country-website-favicon.svg" alt="Plum Blossom" width="50" height="50">
-            </a>
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="credit.html">Credit</a></li>
+          </ul>
+        </nav>
+      </header>
 
-            <nav class="site-navigation" id="site-navigation">
+      <main>
+        <section class="page-header" id="page-header">
+          <h1>TAIPEI</h1>
+          <img src="images/taipei.jpg" alt="Taipei Night View" />
+        </section>
 
-                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                    <title>Menu Icon</title>
-                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-                    </svg>
-                </button>
+        <div class="home-wrapper">
+          <section class="home-intro">
+            <h2>A lil about Taiwan</h2>
+            <p>
+              Taiwan is well knowned for their afforable yet delicious street
+              food in the vibrate night market. This 36km² island can be found
+              at the western edge of the Pacific Ocean had been called ilha
+              formosa ("beautriful island") for their stunning landscapes. It
+              also has amazing contrast of modern and tranditional culture
+              influenced by Chinese, Japanese, and indigenous heritage.
+            </p>
+          </section>
 
+          <div class="home-content">
+            <div class="home-container">
+              <a href="explore.html">
+                <article class="home-text">
+                  <h3>Explore</h3>
+                </article>
 
-                <ul class="nav-menu" id="header-menu">
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="food.html">Food</a></li>
-                    <li><a href="credit.html">Credit</a></li>
-                </ul>
+                <img src="images/view-1.jpg" alt="Taiwan Mountain View" />
+              </a>
+            </div>
 
-            </nav>
+            <div class="home-container">
+              <a href="food.html">
+                <article class="home-text">
+                  <h3>Food</h3>
+                </article>
+                <img src="images/night-marke-resizet.png" alt="Night Market" />
+              </a>
+            </div>
+          </div>
 
-        </header>
+          <a href="#top" class="top">Back to Top ↑ </a>
+        </div>
+      </main>
 
-        <main>
-
-            <section class="page-header" id="page-header">
-				<h1>TAIPEI</h1>
-                <video src="medias/taiwan-vid.mp4" autoplay muted loop></video>
-			</section>
-
-            <div class="home-wrapper">
-
-                <section class="home-intro">
-                    <h2>A lil about Taiwan</h2>
-                    <p>
-                    Taiwan is well knowned for their afforable yet delicious street food in the vibrate night market. This 36km² island can be found at the western edge of the Pacific Ocean had been called ilha formosa ("beautriful island") for their stunning landscapes. It also has amazing contrast of modern and tranditional culture influenced by Chinese, Japanese, and indigenous heritage.
-                    </p>
-                </section>
-                
-                <div class="home-content">
-                
-                        <div class="home-container">
-                            <a href="explore.html">
-                            <article class="home-text">
-                                <h3>Explore</h3>
-                            </article>
-                            
-                            <img src="images/view-1.jpg" alt="Taiwan Mountain View">
-                            </a>
-                        </div>
-
-                        <div class="home-container">
-                            <a href="food.html">
-                            <article class="home-text">
-                                <h3>Food</h3>
-                            </article>
-                            <img src="images/night-marke-resizet.png" alt="Night Market">
-                            </a>
-                        </div>
-
-                    </div>
-
-                <a href="#top" class="top">Back to Top ↑ </a>
-
-                </div>
-
-        </main>
-
-        <footer class="site-footer" id="site-footer">
-            <p>&copy; Laurie Yeh 2023 </p>
-            <p>For Educational Purposes</p>
-        </footer>
+      <footer class="site-footer" id="site-footer">
+        <p>&copy; Laurie Yeh 2023</p>
+        <p>For Educational Purposes</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
